@@ -1,0 +1,120 @@
+@import "../variables.scss";
+
+.loading {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 10;
+	&:before, &:after {
+		content: "";
+		display: block;
+		width: 50%;
+		height: 100%;
+		background: $dark-grey;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	&:after {
+		left: auto;
+		right: 0;
+	}
+	.thinking {
+		color: white;
+		font-family: "Orbitron";
+		text-transform: uppercase;
+		position: absolute;
+		top: calc(50% + 60px);
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 20;
+		margin: 0;
+		animation: pulse-text 1.5s infinite;
+	}
+	.loading-icon {
+		width: 99px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		border-radius: 9px;
+		z-index: 10;
+		&:before {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			display: block;
+			transform: translateX(-50%) translateY(-50%);
+			font-family: "Font Awesome 5 Free";
+			content: "\f5dc";
+			color: white;
+			font-weight: 900;
+			font-size: 50px;
+			animation: pulse-anim 1.5s infinite;
+		}
+		.letter {
+			height: 100%;
+			width: auto;
+			position: absolute;
+			top: 0;
+			&.letter-j {
+				right: 0;
+			}
+			&.letter-c {
+				left: 0;
+			}
+		}
+	}
+	&.done {
+		.thinking, .loading-icon:before {
+			opacity: 0;
+			transition: all .5s;
+		}
+		.letter.letter-j {
+			animation: animate-j 1s forwards linear;
+		}
+		.letter.letter-c {
+			animation: animate-c 1s forwards linear;
+		}
+		&:before, &:after {
+			width: 0;
+			opacity: 0.5;
+			transition: all 0.85s linear;
+			transition-delay: 0.2s;
+		}
+	}
+	&.hidden {
+		display: none;
+	}
+}
+
+/* Pulse */
+@keyframes pulse-anim {
+	0%, 100% {  
+		transform: translateX(-50%) translateY(-50%) scale(1);
+	}
+	50% {
+		transform: translateX(-50%) translateY(-50%) scale(.8);
+	}
+}
+
+@keyframes pulse-text {
+	0%, 100% {  
+		letter-spacing: 1px;
+	}
+	50% {
+		letter-spacing: 2px;
+	}
+}
+
+@keyframes animate-j {
+	15% { right: -5px; }
+	100% { right: calc(50vw + 50px); }
+}
+
+@keyframes animate-c {
+	15% { left: -5px; }
+	100% { left: calc(50vw + 50px) }
+}

@@ -1,0 +1,172 @@
+{
+	"data": [
+		{
+			"text": "MongoDB",
+			"sides": 0,
+			"radius": 40,
+			"color": "#13aa52",
+			"fontsize": 10
+		},
+		{
+			"text": "MySQL",
+			"sides": 0,
+			"radius": 30,
+			"color": "#f29221",
+			"fontsize": 8
+		},
+		{
+			"text": "React.js",
+			"sides": 0,
+			"radius": 60,
+			"color": "#61dafb",
+			"fontsize": 18
+		},
+		{
+			"text": "Redux",
+			"sides": 0,
+			"radius": 40,
+			"color": "#764abc",
+			"fontsize": 15
+		},
+		{
+			"text": "Node.js",
+			"sides": 0,
+			"radius": 40,
+			"color": "#026e00",
+			"fontsize": 14
+		},
+		{
+			"text": "Webpack",
+			"sides": 0,
+			"radius": 50,
+			"color": "#8dd6f9",
+			"fontsize": 15
+		},
+		{
+			"text": "NPM",
+			"sides": 0,
+			"radius": 50,
+			"color": "#fb3e44",
+			"fontsize": 18
+		},
+		{
+			"text": "Sass",
+			"sides": 0,
+			"radius": 60,
+			"color": "#bf4080",
+			"fontsize": 20
+		},
+		{
+			"text": "GraphQL",
+			"sides": 0,
+			"radius": 50,
+			"color": "#D64292",
+			"fontsize": 16
+		},
+		{
+			"text": "CSS3",
+			"sides": 0,
+			"radius": 60,
+			"color": "#264de4",
+			"fontsize": 18
+		},
+		{
+			"text": "HTML5",
+			"sides": 0,
+			"radius": 60,
+			"color": "#e34c26",
+			"fontsize": 18
+		},
+		{
+			"text": "Babel",
+			"sides": 0,
+			"radius": 50,
+			"color": "#f5da55",
+			"fontsize": 18
+		},
+		{
+			"text": "PHP",
+			"sides": 0,
+			"radius": 30,
+			"color": "#4F5B93",
+			"fontsize": 10
+		},
+		{
+			"text": "Magento",
+			"sides": 0,
+			"radius": 30,
+			"color": "#f26322",
+			"fontsize": 8
+		},
+		{
+			"text": "Storybook.js",
+			"sides": 0,
+			"radius": 50,
+			"color": "#ff4785",
+			"fontsize": 11
+		},
+		{
+			"text": "Angular.js",
+			"sides": 0,
+			"radius": 40,
+			"color": "#b52e31",
+			"fontsize": 12
+		},
+		{
+			"text": "Mocha",
+			"sides": 0,
+			"radius": 40,
+			"color": "#c29d7f",
+			"fontsize": 16
+		},
+		{
+			"text": "Chai",
+			"sides": 0,
+			"radius": 30,
+			"color": "#a40802",
+			"fontsize": 16
+		},
+		{
+			"text": "Photoshop",
+			"sides": 0,
+			"radius": 60,
+			"color": "#3c327b",
+			"fontsize": 12
+		},
+		{
+			"text": "Illustrator",
+			"sides": 0,
+			"radius": 60,
+			"color": "#FBBB4D",
+			"fontsize": 12
+		},
+		{
+			"text": "Git",
+			"sides": 0,
+			"radius": 40,
+			"color": "#F1502F",
+			"fontsize": 18
+		},
+		{
+			"text": "Wordpress",
+			"sides": 0,
+			"radius": 50,
+			"color": "#096484",
+			"fontsize": 12
+		},
+		{
+			"text": "Responsive",
+			"sides": 0,
+			"radius": 50,
+			"color": "#4abdac",
+			"fontsize": 12
+		},
+		{
+			"text": "REST",
+			"sides": 0,
+			"radius": 60,
+			"color": "#88C13D",
+			"fontsize": 18
+		}
+	]
+}

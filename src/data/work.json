@@ -1,0 +1,43 @@
+{
+	"aion": {
+		"title": "Aion In-Game Shop",
+		"image": "path to image",
+		"description": "I made the in-game shop for Aion",
+		"used": [
+			"React.js",
+			"Webpack",
+			"Redux",
+			"Babel",
+			"SCSS",
+			"GraphQL"
+		]
+	},
+	"lineage": {
+		"title": "Lineage 2 Shop",
+		"image": "path to image",
+		"description": "I made overview page as well as the app that powers the purchases",
+		"used": [
+			"React.js",
+			"Webpack",
+			"Redux",
+			"Babel",
+			"SCSS",
+			"REST"
+		]
+	},
+	"personal": {
+		"title": "Personal Portfolios",
+		"image": "path to image",
+		"description": "I made some things for Blizzard",
+		"used": [
+			"React.js",
+			"Webpack",
+			"Babel",
+			"Next.js",
+			"Babel",
+			"Storybook.js",
+			"Service Workers",
+			"Create.js"
+		]
+	}
+}
