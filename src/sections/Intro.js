@@ -4,7 +4,6 @@ import './intro.scss';
 import data from '../data/intro';
 
 class Intro extends React.Component {
-
 	render() {
 		return (
 	    <section className="intro ambient-canvas">

@@ -1,23 +1,32 @@
 section.skills {
-	background: #282923;
+	background: black;
 	position: relative;
-	
+	h1 {
+		position: relative;
+		font-family: "Punk";
+		font-size: 60vh;
+		line-height: 100vh;
+		color: rgba(#00ff9f, 0.1);
+		font-weight: 100;
+		text-align: center;
+		z-index: 1;
+	}
 }
 
 .skill-intro{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 50%;
-	z-index: 10;
-	min-width: 300px;
-	min-height: 300px;
-	transform: translateX(-50%) translateY(-50%);
-	text-align: center;
+  top: 30%;
+  left: 50%;
+  width: 30%;
+  min-width: 300px;
+  min-height: 300px;
+  font-size: 18px;
+  line-height: 24px;
+  transform: translateX(-50%) translateY(-50%);
 	color: white;
+	font-family: "Orbitron";
+	z-index: 5;
 }
-
-
 
 #balls {
 	width: 100%;
@@ -29,14 +38,6 @@ section.skills {
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: 0
+		z-index: 10;
 	}
-}
-
-#bbutton {
-	position: absolute;
-	z-index: 99;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%) ;
 }

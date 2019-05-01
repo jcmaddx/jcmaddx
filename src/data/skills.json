@@ -1,4 +1,6 @@
 {
+	"intro": "Over the years, I've had the opportunity to work with many different technologies.  As my knowledge has grown, I have moved from building traditional websites to making web applications. Although I'm no professional designer, I do enjoy making things look pretty.",
+	"instructions": "Below you can find some of the skills I have acquired over the years.  Some of them might have rolled off the side, but you can move them around to see them all.",
 	"data": [
 		{
 			"text": "MongoDB",
@@ -15,11 +17,11 @@
 			"fontsize": 8
 		},
 		{
-			"text": "React.js",
+			"text": "Webpack",
 			"sides": 0,
-			"radius": 60,
-			"color": "#61dafb",
-			"fontsize": 18
+			"radius": 50,
+			"color": "#8dd6f9",
+			"fontsize": 15
 		},
 		{
 			"text": "Redux",
@@ -36,11 +38,11 @@
 			"fontsize": 14
 		},
 		{
-			"text": "Webpack",
+			"text": "React.js",
 			"sides": 0,
-			"radius": 50,
-			"color": "#8dd6f9",
-			"fontsize": 15
+			"radius": 60,
+			"color": "#61dafb",
+			"fontsize": 18
 		},
 		{
 			"text": "NPM",
@@ -152,13 +154,6 @@
 			"sides": 0,
 			"radius": 50,
 			"color": "#096484",
-			"fontsize": 12
-		},
-		{
-			"text": "Responsive",
-			"sides": 0,
-			"radius": 50,
-			"color": "#4abdac",
 			"fontsize": 12
 		},
 		{

@@ -3,6 +3,8 @@ import './skills.scss';
 
 import { ballpool } from '../utils/balls';
 
+import data from '../data/skills';
+
 var interval;
 
 class Skills extends React.Component {
@@ -44,7 +46,10 @@ class Skills extends React.Component {
 		return (
 	    <section id="skills" className="skills">
 	      <h1>Skills</h1>
-	      <div className="skill-intro">Something about these skills bouncing around.</div>
+	      <div className="skill-intro">
+	      	<p>{data.intro}</p>
+	      	<p>{data.instructions}</p>
+	      </div>
 	      <div id="balls" />
 	    </section>
 	  );

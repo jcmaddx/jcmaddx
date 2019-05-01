@@ -22,10 +22,12 @@ class Loading extends React.Component {
 
 	loadingDone = () => {
 		let loader = document.getElementById('loader');
+		let menu = document.getElementById('menu');
 		loader.classList.add('done');
 		setTimeout(() => {
 			loader.classList.add('hidden');
-		}, 1200)
+			menu.classList.add('show');
+		}, 2000)
 	}
 
 	render() {

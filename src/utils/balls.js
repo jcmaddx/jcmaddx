@@ -82,6 +82,10 @@ Matter.Render.bodies = function(render, bodies, context) {
 
         if (!options.wireframes) {
           c.fillStyle = part.render.fillStyle;
+          if(options.showShadows){
+	          c.shadowColor = part.render.fillStyle;
+	          c.shadowBlur = 15;
+	        }
 
           if (part.render.lineWidth) {
             c.lineWidth = part.render.lineWidth;
@@ -141,10 +145,10 @@ export function ballpool() {
         Scale = 1.5,
         interval;
 
-    // ,ndow sizes
+    // window sizes
     let wWidth = window.innerWidth;
     let wHeight =  window.innerHeight;
-    let colors = ["#a6de29", "#a780ff", "#f52364", '#4abdac'];
+    let colors = ["#00ff9f", "#00b8ff", "#d600ff", "#001eff"];
 
     // create engine
     let engine = Engine.create(),
@@ -160,7 +164,7 @@ export function ballpool() {
           showAngleIndicator: false,
           wireframes: false,
           background: 'transparent',
-          showShadows: true
+          showShadows: false
         }
     });
 
@@ -172,7 +176,7 @@ export function ballpool() {
 
     // add bodies
     World.add(world, [
-        Bodies.rectangle(0, wHeight, wWidth * 3, 5, { isStatic: true, render: {fillStyle: '#282923'} })
+        Bodies.rectangle(0, wHeight, wWidth * 3, 5, { isStatic: true, render: {fillStyle: '#000'} })
     ]);
 
     let stackBefore = Composites.stack(0, 0, skills.data.length, 2, 10, 10, function(x, y) {

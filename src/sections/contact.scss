@@ -1,0 +1,67 @@
+section.contact {
+	background: black;
+	h1 {
+		font-family: "Punk";
+		color: rgba(#d600ff, 0.15);
+		opacity: 1;
+		font-size: 25vw;
+		line-height: 50vh;
+		text-align: center;
+		font-weight: 100;
+	}
+	.social {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		background: #bd00ff;
+		&:after {
+			background: #bd00ff;
+			content: "";
+			height: 50px;
+			width: 100%;
+			transform: skewY(1deg);
+			position: absolute;
+			top: -20px;
+			right: 0;
+			z-index: 0;
+		}
+		a {
+			display: inline-block;
+			position: relative;
+			top: -10px;
+			z-index: 1;
+			width: 40px;
+			height: 40px;
+			margin: 0 0 0 20px;
+			padding: 0;
+			cursor: pointer;
+			&:before {
+				content: "";
+				font-family: "Font Awesome 5 Brands";
+				width: 40px;
+				font-size: 40px;
+				font-weight: 900;
+				color: white;
+				line-height: 40px;
+				text-align: center;
+			}
+			&.github:before {
+				content: "\f113";
+			}
+			&.linkedin:before {
+				content: "\f0e1";
+			}
+			&.resume:before {
+				content: "\f15c";
+				font-family: "Font Awesome 5 Free";
+			}
+			&:hover {
+				&:before {
+					color: #00ff9f;
+				}
+			}
+		}
+	}
+}

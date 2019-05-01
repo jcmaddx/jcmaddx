@@ -5,24 +5,12 @@
 	height: 100vh;
 	position: fixed;
 	z-index: 10;
-	&:before, &:after {
-		content: "";
-		display: block;
-		width: 50%;
-		height: 100%;
-		background: $dark-grey;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 0;
-	}
-	&:after {
-		left: auto;
-		right: 0;
-	}
+	background: black;
 	.thinking {
-		color: white;
-		font-family: "Orbitron";
+		color: #d600ff;
+		font-family: "Punk";
+		font-size: 30px;
+		font-weight: 100;
 		text-transform: uppercase;
 		position: absolute;
 		top: calc(50% + 60px);
@@ -60,10 +48,10 @@
 			position: absolute;
 			top: 0;
 			&.letter-j {
-				right: 0;
+				right: 1px;
 			}
 			&.letter-c {
-				left: 0;
+				left: 1px;
 			}
 		}
 	}
@@ -73,17 +61,14 @@
 			transition: all .5s;
 		}
 		.letter.letter-j {
-			animation: animate-j 1s forwards linear;
+			animation: animate-j 1s forwards;
 		}
 		.letter.letter-c {
-			animation: animate-c 1s forwards linear;
+			animation: animate-c 1s forwards;
 		}
-		&:before, &:after {
-			width: 0;
-			opacity: 0.5;
-			transition: all 0.85s linear;
-			transition-delay: 0.2s;
-		}
+		opacity: 0;
+		transition: opacity .5s;
+		transition-delay: 1.5s;
 	}
 	&.hidden {
 		display: none;
@@ -102,19 +87,19 @@
 
 @keyframes pulse-text {
 	0%, 100% {  
-		letter-spacing: 1px;
+		letter-spacing: 2px;
 	}
 	50% {
-		letter-spacing: 2px;
+		letter-spacing: 4px;
 	}
 }
 
 @keyframes animate-j {
-	15% { right: -5px; }
-	100% { right: calc(50vw + 50px); }
+	15%, 40% { right: -5px; }
+	100% { right: 55px; }
 }
 
 @keyframes animate-c {
-	15% { left: -5px; }
-	100% { left: calc(50vw + 50px) }
+	15%, 40% { left: -5px; }
+	100% { left: 55px }
 }

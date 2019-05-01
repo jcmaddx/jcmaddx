@@ -1,2 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron|Roboto|Roboto+Slab");
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+@font-face{ 
+	font-family: 'Punk';
+	src: url('./fonts/kill_the_noise.eot');
+	src: url('./fonts/kill_the_noise.eot?#iefix') format('embedded-opentype'),
+	     url('./fonts/kill_the_noise.woff') format('woff'),
+	     url('./fonts/kill_the_noise.ttf') format('truetype'),
+	     url('./fonts/kill_the_noise.svg#webfont') format('svg');
+}
