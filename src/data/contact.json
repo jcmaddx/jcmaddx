@@ -1,11 +1,6 @@
 {
-	"title": "Contact Me",
-	"info": "Some short blurb here",
-	"mailto": "url for the gmail thing",
-	"name": "Name",
-	"comments": "Comments",
-	"email": "Your Email",
-	"linkedin": "my linkedin url",
-	"github": "my github url",
-	"resume": "resume url?"
+	"endpoint": "https://script.google.com/macros/s/AKfycbyZ4u1GmapvARn5NVRfPe4u_EVSeTOK8ffI-u1E7dFmJGZCTG6D/exec",
+	"linkedin": "https://www.linkedin.com/in/j-c-maddox-a575bb26/",
+	"github": "https://github.com/jcmaddx",
+	"resume": "http://johncmaddox.com/resume/current.pdf"
 }

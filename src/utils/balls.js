@@ -3,13 +3,10 @@ import wrap from 'matter-wrap';
 
 import skills from '../data/skills';
 
-Matter.use(
-    'matter-wrap'
-);
+Matter.use(wrap);
 
 Matter.Render.bodies = function(render, bodies, context) {
   var c = context,
-      engine = render.engine,
       options = render.options,
       showInternalEdges = options.showInternalEdges || !options.wireframes,
       body,
@@ -38,8 +35,8 @@ Matter.Render.bodies = function(render, bodies, context) {
 
       if (part.render.sprite && part.render.sprite.texture && !options.wireframes) {
         // part sprite
-        var sprite = part.render.sprite;
-            //texture = _getTexture(render, sprite.texture);
+        //var sprite = part.render.sprite;
+        //texture = _getTexture(render, sprite.texture);
 
         c.translate(part.position.x, part.position.y);
         c.rotate(part.angle);
@@ -142,8 +139,7 @@ export function ballpool() {
         Mouse = Matter.Mouse,
         World = Matter.World,
         Bodies = Matter.Bodies,
-        Scale = 1.5,
-        interval;
+        Scale = 1.5;
 
     // window sizes
     let wWidth = window.innerWidth;
@@ -189,12 +185,6 @@ export function ballpool() {
     	let current = skills.data[c];
     	return Bodies.polygon(a, b, current.sides, current.radius * Scale, {render: { fillStyle: current.color, text: {content: current.text, size: current.fontsize * Scale}}});
     })
-
-    let stackAfter = Composites.stack(20, 20, skills.data.length, 2, 10, 10, function(x, y) {
-    		let rando = Common.random(10, 30) * Scale;
-    		let randomColor = colors[Math.floor(Math.random() * Math.floor(4))]
-        return Bodies.circle(x, y, rando, { restitution: 0.1, friction: 0.1, render: {fillStyle: randomColor} });
-    });
     
     World.add(world, [
     		stackBefore,

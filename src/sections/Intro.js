@@ -6,7 +6,7 @@ import data from '../data/intro';
 class Intro extends React.Component {
 	render() {
 		return (
-	    <section className="intro ambient-canvas">
+	    <section id="intro" className="intro">
 	    	<div className="glitch-bg">
     			<div className="glitch-img"></div>
     			<div className="glitch-img"></div>

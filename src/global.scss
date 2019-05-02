@@ -17,8 +17,48 @@ section {
 	overflow: hidden;
 }
 
+a {
+	text-decoration: none;
+}
+
 h1 {
 	font-family: "Orbitron";
 	color: white;
 	margin: 0;
+}
+
+.btn-slash {
+	position: relative;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Orbitron";
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	background: none;
+	&:after {
+		content: "-";
+		font-family: "Punk";
+		font-size: 500px;
+		line-height: 40px;
+		position: absolute;
+		left: -45px;
+  	top: -22px;
+		z-index: -1;
+		color: #d600ff;
+		transform: rotate(-185deg);
+		pointer-events: none;
+		transition: all .3s;
+	}
+	&:hover:not(.disabled) {
+		&:after {
+			color: #bd00ff;
+		}
+	}
 }
