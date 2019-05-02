@@ -1,7 +1,7 @@
 {
   "root": "build/",
   "routes": {
-    "/**": "index.html",
+    "/": "index.html",
     "/resume/blizzard/**": "/public/resume/blizzard/",
     "/resume/current.pdf": "/public/resume/current.pdf"
   }
