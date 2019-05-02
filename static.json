@@ -2,7 +2,9 @@
   "root": "build/",
   "clean_urls": true,
   "routes": {
-    "/resume/**": "public/resume/",
-    "/": "index.html"
+    "/resume/blizzard": "public/resume/blizzard",
+    "/resume/blizzard/overwatch": "public/resume/blizzard/overwatch",
+    "/resume/blizzard/hearthstone": "public/resume/blizzard/hearthstone",
+    "/**": "index.html"
   }
 }
