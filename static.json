@@ -3,7 +3,7 @@
   "clean_urls": true,
   "routes": {
     "/resume/blizzard": "public/resume/blizzard",
-    "/resume/blizzard/hearthstone": "public/resume/blizzard/hearthstone",
+    "/resume/blizzard/hearthstone/**": "public/resume/blizzard/hearthstone",
     "/resume/blizzard/overwatch": "public/resume/blizzard/overwatch",
     "/**": "index.html"
   }
