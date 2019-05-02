@@ -1,0 +1,15 @@
+{
+	"manifest": [
+		"/images/opening/altar.png",
+		"/images/opening/pack-amount.png",
+		"/images/opening/pack-disc.jpg",
+		"/images/opening/pack-drop-glow.png",
+		"/images/opening/pack-drop-swirl-glow.png",
+		"/images/opening/pack-glow.png",
+		"/images/opening/pack-silhouette.png",
+		"/images/opening/pack-tray.png",
+		"/images/opening/pack.png",
+		"/images/global/bg-hinge.jpg",
+		"/images/global/wood-fill.jpg"
+	]
+}

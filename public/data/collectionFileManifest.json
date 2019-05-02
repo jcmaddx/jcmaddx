@@ -1,0 +1,31 @@
+{
+	"manifest": [
+		"/images/global/bg-hinge.jpg",
+		"/images/global/wood-fill.jpg",
+		"/images/collection/book-cover.png",
+		"/images/collection/book-latch.png",
+		"/images/collection/count-tab.png",
+		"/images/collection/deck-tray.png",
+		"/images/collection/dust.png",
+		"/images/collection/info-popup.png",
+		"/images/collection/page-bg.jpg",
+		"/images/collection/page.png",
+		"/images/collection/popup-common.png",
+		"/images/collection/popup-epic.png",
+		"/images/collection/popup-legendary.png",
+		"/images/collection/popup-rare.png",
+		"/images/collection/soulbound.png",
+		"/images/collection/labels/cabinets.png",
+		"/images/collection/labels/cohorts.png",
+		"/images/collection/labels/healthcare.png",
+		"/images/collection/labels/hobbies.png",
+		"/images/collection/labels/neutral.png",
+		"/images/collection/labels/pets.png",
+		"/images/collection/labels/repo.png",
+		"/images/collection/labels/student.png",
+		"/images/collection/labels/travels.png",
+		"/images/collection/labels/webdev.png"
+	]
+}
+
+
