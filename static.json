@@ -1,0 +1,8 @@
+{
+  "root": "build/",
+  "routes": {
+    "/**": "index.html",
+    "/resume/blizzard/*": "/public/resume/blizzard/",
+    "/resume/current.pdf": "/public/resume/current.pdf"
+  }
+}
