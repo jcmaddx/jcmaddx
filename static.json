@@ -1,8 +1,8 @@
 {
   "root": "build/",
   "routes": {
-    "/resume/blizzard/": "/public/resume/blizzard/index.html",
-    "/resume/blizzard/overwatch/": "/public/resume/blizzard/overwatch/index.html",
+    "/resume/blizzard/index.html": "/public/resume/blizzard/index.html",
+    "/resume/blizzard/overwatch/index.html": "/public/resume/blizzard/overwatch/index.html",
     "/resume/current.pdf": "/public/resume/current.pdf",
     "/**": "index.html"
   }
