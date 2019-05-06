@@ -26,6 +26,10 @@ section.skills {
 	color: white;
 	font-family: "Orbitron";
 	z-index: 5;
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
 
 #balls {

@@ -95,4 +95,15 @@ section.intro {
 		background-blend-mode: overlay;
 		animation-name: glitch-anim-flash;
 	}
+
+	@media screen and (max-width: 768px) {
+		.glitch-img:nth-child(2), .glitch-img:nth-child(3), .glitch-img:nth-child(4),.glitch-img:nth-child(5) {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.intro-content h1 {
+			font-size: 32px;
+		}
+	}
 }

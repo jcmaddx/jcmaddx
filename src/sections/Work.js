@@ -58,7 +58,7 @@ class Work extends React.Component {
 										<ul className="slide__used">
 											{
 												item.used.map((item, key) => {
-													return <li key={key}>{item}</li>
+													return <li key={key} className={item}>{item}</li>
 												})
 											}
 										</ul>

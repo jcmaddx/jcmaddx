@@ -16,6 +16,10 @@ section.work {
 		line-height: 35vw;
 		text-align: center;
 		transform: rotate(-30deg);
+		@media screen and (max-width: 600px) {
+			font-size: 35vw;
+	    transform: rotate(-10deg);
+		}
 	}
 	.slides {
 		position: absolute;
@@ -48,6 +52,11 @@ section.work {
 			background-position: top right;
 			background-size: cover;
 			z-index: 10;
+			@media screen and (max-width: 600px) {
+				right: auto;
+				width: 150vw;
+				left: 0;
+			}
 		}
 	}
 
@@ -77,6 +86,18 @@ section.work {
 		transform: skewX(-20deg);
 		* {
 			transform: skewX(20deg);
+		}
+		@media screen and (max-width: 600px) {
+			transform: none;
+			width: calc(90% - 20px);
+	    min-height: 25vh;
+	    padding: 10px 10px 50px;
+	    top: 20%;
+    	left: 5%;
+    	z-index: 10;
+			*{
+				transform: none;
+			}
 		}
 	}
 
@@ -108,6 +129,11 @@ section.work {
 		top: -65px;
 		right: -20px;
 		text-shadow: 0 0 10px rgba(black, 0.8);
+		@media screen and (max-width: 600px) {
+			font-size: 3.5rem;
+			top: -40px;
+    	right: -10px;
+		}
 	}
 
 	.slide__description {
@@ -120,6 +146,11 @@ section.work {
 		color: #fff;
 		font-family: "Orbitron";
 		line-height: 24px;
+		@media screen and (max-width: 600px) {
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 50px;
+		}
 	}
 
 	.slide__used {
@@ -145,6 +176,15 @@ section.work {
 				vertical-align: top;
 				margin-right: 10px;
 				color: #00ff9f;
+			}
+			@media screen and (max-width: 600px) {
+				font-size: 14px;
+				&:before {
+					font-size: 70px;
+				}
+				&.Service {
+					display: none;
+				}
 			}
 		}
 	}
@@ -203,6 +243,17 @@ section.work {
 				text-shadow: 0 0 10px black;
 			}
 		}
+		@media screen and (max-width: 600px) {
+			z-index: 50px;
+			margin: 0;
+			top: 53%;
+			&.prev {
+				left: 5px;
+			}
+			&.next {
+				right: 5px;
+			}
+		}
 	}
 
 	.slide-nav__button:focus {
@@ -226,10 +277,6 @@ section.work {
 	.slide-nav__text--current:hover,
 	.slide-nav__text:focus {
 		color: green;
-	}
-
-	@media screen and (max-width: 65em) {
-
 	}
 
 	/* Glitch styles */
@@ -289,5 +336,15 @@ section.work {
 		background-color: #af4949;
 		background-blend-mode: overlay;
 		animation-name: glitch-anim-flash;
+	}
+
+	@media screen and (max-width: 600px) {
+		.slide-overlay {
+			right: auto;
+			left: 0;
+		}
+		.slide__img {
+			display: none;
+		}
 	}
 }

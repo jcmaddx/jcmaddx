@@ -146,6 +146,10 @@ export function ballpool() {
     let wHeight =  window.innerHeight;
     let colors = ["#00ff9f", "#00b8ff", "#d600ff", "#001eff"];
 
+    if(wWidth <= 600){
+    	Scale = 0.8;
+    }
+
     // create engine
     let engine = Engine.create(),
         world = engine.world;
@@ -185,11 +189,29 @@ export function ballpool() {
     	let current = skills.data[c];
     	return Bodies.polygon(a, b, current.sides, current.radius * Scale, {render: { fillStyle: current.color, text: {content: current.text, size: current.fontsize * Scale}}});
     })
-    
-    World.add(world, [
+
+    if(wWidth <= 600) {
+    	stackBefore = Composites.stack(0, 0, skills.data.length / 2, 1, 10, 10, function(x, y) {
+    		let rando = Common.random(20, 30) * Scale;
+    		let randomColor = colors[Math.floor(Math.random() * Math.floor(4))]
+        return Bodies.circle(x, y, rando, { restitution: 0.1, friction: 0.1, render: {fillStyle: randomColor} });
+    	});
+
+    	World.add(world, [
+        skillStack,
+        stackBefore,
+        stackBefore
+    	]);
+    } else {
+    	World.add(world, [
     		stackBefore,
         skillStack
-    ]);
+   		]);
+    }
+
+    
+    
+   
 
     // add mouse control
     let mouse = Mouse.create(render.canvas),

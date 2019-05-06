@@ -11,6 +11,10 @@ section.contact {
 		line-height: 50vh;
 		text-align: center;
 		font-weight: 100;
+		@media screen and (max-width: 600px) {
+			font-size: 30vw;
+			line-height: 30vh;
+		}
 	}
 	.thinking {
 		position: absolute;
@@ -83,6 +87,13 @@ section.contact {
 			transform: translateX(-50%) translateY(-50%) scale(1);
 			opacity: 1;
 		}
+		@media screen and (max-width: 600px) {
+			top: 50%;
+			h2 {
+				font-size: 75px;
+				white-space: nowrap;
+			}
+		}
 	}
 	.contact-form {
 		position: absolute;
@@ -93,6 +104,10 @@ section.contact {
 		transform: translateX(-50%) translateY(-50%) scale(1);
 		transition: all .3s;
 		transform-origin: 50% 50%;
+		@media screen and (max-width: 600px) {
+			width: calc(100vw - 20px);
+			top: 40%;
+		}
 		&.hidden {
 			transform: translateX(-50%) translateY(-50%) scale(0);
 		}
@@ -106,7 +121,7 @@ section.contact {
 				height: 110%;
 				transform: skewX(-10deg);
 				content: "";
-				background: white;
+				background: rgba(#00b8ff, 0.5);
 				z-index: -1;
 				position: absolute;
 				top: -5%;
@@ -116,8 +131,8 @@ section.contact {
 				z-index: 1;
 				position: absolute;
 				font-family: "Punk";
-				color: #bd00ff;
-				opacity: 0.2;
+				color: black;
+				opacity: 0.4;
 				font-size: 50px;
 				transform: scale(0.8);
 				transition: all .3s;
@@ -125,6 +140,7 @@ section.contact {
 			&.focused span {
 				transform: scale(1);
 				opacity: 1;
+				color: #bd00ff;
 			}
 			&.name-wrap, &.email-wrap {
 				span {
@@ -140,10 +156,27 @@ section.contact {
 					transform: rotate(-80deg) translateX(20%) scale(0.8);
 					top: 50%;
 					left: -14%;
+					@media screen and (max-width: 600px) { 
+						transform: scale(0.8);
+						top:-5px;
+						left: -3%;
+					}
 				}
 				&.focused span {
 					left: -26%;
 					transform: rotate(-80deg) translateX(20%) scale(1);
+				}
+			}
+			@media screen and (max-width: 600px) {
+				&:after {
+					transform: none;
+				}
+				&.name-wrap.focused, &.email-wrap.focused, &.message-wrap.focused {
+					span {
+						opacity: 0;
+						left: -22%;
+						transform: scale(1);
+					}
 				}
 			}
 		}
@@ -156,7 +189,11 @@ section.contact {
 			position: relative;
 			z-index: 10;
 			background: none;
+			color: white;
 			font-family: "Orbitron";
+			@media screen and (max-width: 600px) {
+				font-size: 13px;
+			}
 		}
 		input {
 			height: 40px;
@@ -165,6 +202,9 @@ section.contact {
 		textarea {
 			height: 200px;
 			padding: 20px;
+			@media screen and (max-width: 600px) {
+				height: 130px;
+			}
 		}
 	}
 	.submit {
@@ -173,6 +213,9 @@ section.contact {
 		transition: all .3s;
 		&.disabled {
 			opacity: 0.5;
+		}
+		@media screen and (max-width: 600px) {
+			margin: 0px 20px 0 0;
 		}
 	}
 	.social {

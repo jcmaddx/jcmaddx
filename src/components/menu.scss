@@ -39,4 +39,13 @@
 			}
 		}
 	}
+	@media screen and (max-width: 600px) {
+		ul {
+			margin-right: 10px;
+			li {
+				margin: 0 10px;
+				font-size: 24px;
+			}
+		}
+	}
 }
